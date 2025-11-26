@@ -231,7 +231,10 @@ a:hover {
 }
 @media (max-width: 768px) {
   .catalog-section {
-    padding: 3rem 1.5rem;
+    padding: 2rem 1rem;
+  }
+  .catalog-section .section-header {
+    margin-bottom: 1.5rem;
   }
   .catalog-section .section-header h2 {
     font-size: 1.8rem;
@@ -244,6 +247,13 @@ a:hover {
   grid-auto-rows: 250px;
   gap: 1.5rem;
 }
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 180px;
+    gap: 0.8rem;
+  }
+}
 .gallery-grid .product-card {
   position: relative;
   display: flex;
@@ -255,11 +265,6 @@ a:hover {
 }
 .gallery-grid .product-card.wide {
   grid-column: span 2;
-}
-@media (max-width: 550px) {
-  .gallery-grid .product-card.wide {
-    grid-column: span 1;
-  }
 }
 .gallery-grid .product-card .img-container {
   flex-grow: 1;
@@ -276,19 +281,38 @@ a:hover {
   padding-top: 1rem;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 .gallery-grid .product-card .info h3 {
   font-family: "Lato", sans-serif;
   font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  line-height: 1.2;
 }
 .gallery-grid .product-card .info span {
   font-size: 0.9rem;
   font-weight: 600;
+  margin-left: 0.5rem;
+  white-space: nowrap;
 }
 .gallery-grid .product-card:hover .img-container img {
   transform: scale(1.03);
+}
+@media (max-width: 768px) {
+  .gallery-grid .product-card .info {
+    padding-top: 0.5rem;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  .gallery-grid .product-card .info h3 {
+    font-size: 0.75rem;
+  }
+  .gallery-grid .product-card .info span {
+    font-size: 0.8rem;
+    margin-left: 0;
+    color: #757575;
+  }
 }
 
 .modal {
