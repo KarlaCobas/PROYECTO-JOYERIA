@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $color-bg;
+    font-family: $font-body;
+    color: $color-text-main;
+    font-weight: 300;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: $font-heading;
+    font-weight: 400;
+    color: $color-text-main;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.3s ease;
+    &:hover { opacity: 0.6; }
+}
+
+// Animación base
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    
+    &.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.resize-animation-stopper * {
+    animation: none !important;
+    transition: none !important;
+}
