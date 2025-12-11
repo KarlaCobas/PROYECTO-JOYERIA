@@ -553,7 +553,7 @@ a:hover {
   font-size: 0.9rem;
   font-weight: 600;
   white-space: nowrap;
-  color: #d4af37;
+  color: #1a1a1a;
   font-family: "Playfair Display", serif;
 }
 @media (max-width: 1024px) {
@@ -730,7 +730,7 @@ a:hover {
 .product-grid-container .grid-product-card .grid-info .price {
   font-size: 1rem;
   font-weight: 600;
-  color: #333;
+  color: #1a1a1a;
   display: block;
   margin-bottom: 0.3rem;
 }
