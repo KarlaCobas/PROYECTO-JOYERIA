@@ -1,39 +1,32 @@
-.catalog-container {
-    padding-top: 4rem;
-}
-
 .catalog-section {
-    padding: 4rem 0;
-    margin-bottom: 2rem;
-
-    &:last-child { border-bottom: none; }
+    padding: 2rem 0;
 
     .section-header {
         text-align: center;
-        padding: 0 4rem;
-        margin-bottom: 3rem;
+        padding: 0 1rem;
+        margin-bottom: 1.5rem;
         
         h2 {
-            font-size: 2.2rem;
+            font-size: 1.8rem;
             margin-bottom: 0.5rem;
         }
         p {
             color: $color-text-light;
             font-style: italic;
+            font-size: 0.9rem;
         }
     }
 }
 
-
 .slider-container {
     width: 100%;
-    padding: 2rem 0;
+    padding: 1rem 0;
     position: relative;
 }
 
 .slider-row {
     overflow: hidden;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     
     &:last-child {
         margin-bottom: 0;
@@ -56,12 +49,12 @@
 
 .product-card {
     flex-shrink: 0;
-    width: 300px;
-    margin: 0 1rem;
+    width: 250px;
+    margin: 0 0.8rem;
     cursor: pointer;
     
     .img-container {
-        height: 350px;
+        height: 220px;
         overflow: hidden;
         border-radius: 6px;
         border: 1px solid #e0e0e0;
@@ -70,25 +63,25 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: transform 0.6s ease;
+            transition: transform 0.5s ease;
         }
     }
 
     .info {
-        padding-top: 1rem;
+        padding-top: 0.8rem;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
 
         h3 {
             font-family: $font-body;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.3px;
             line-height: 1.2;
         }
         span { 
-            font-size: 0.9rem; 
+            font-size: 0.85rem; 
             font-weight: 600;
             margin-left: 0.5rem;
             white-space: nowrap;
@@ -100,72 +93,60 @@
     }
 }
 
-
 @keyframes scroll-left {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
 }
 
 @keyframes scroll-right {
-    0% {
-        transform: translateX(-50%);
-    }
-    100% {
-        transform: translateX(0);
-    }
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
 }
 
 .slider-track.left-scroll {
-    animation: scroll-left 40s linear infinite;
+    animation: scroll-left 30s linear infinite;
 }
 .slider-track.right-scroll {
-    animation: scroll-right 40s linear infinite;
+    animation: scroll-right 30s linear infinite;
 }
 
 @media (max-width: 768px) {
     .catalog-section {
-        padding: 3rem 0;
+        padding: 1.5rem 0;
         
         .section-header {
-            padding: 0 1.5rem;
+            padding: 0 0.8rem;
             
             h2 {
-                font-size: 1.8rem;
+                font-size: 1.5rem;
             }
             p {
-                font-size: 0.9rem;
+                font-size: 0.8rem;
             }
         }
     }
     
     .slider-container {
-        padding: 1rem 0;
+        padding: 0.5rem 0;
     }
     
     .slider-row {
-        height: 240px;
-        margin-bottom: 1rem;
+        margin-bottom: 0.8rem;
     }
     
     .product-card {
-        width: 220px;
-        margin: 0 0.75rem;
+        width: 180px;
+        margin: 0 0.6rem;
         
         .img-container {
-            height: 160px;
+            height: 150px;
         }
         
         .info {
-            flex-direction: column;
-            padding-top: 0.5rem;
+            padding-top: 0.6rem;
             
             h3 {
                 font-size: 0.7rem;
-                margin-bottom: 0.2rem;
             }
             span {
                 font-size: 0.75rem;
@@ -174,22 +155,9 @@
     }
     
     .slider-track.left-scroll {
-        animation: scroll-left 15s linear infinite;
+        animation: scroll-left 20s linear infinite;
     }
     .slider-track.right-scroll {
-        animation: scroll-right 15s linear infinite;
-    }
-
-    .slider-track-a.left-scroll {
-        animation-duration: 12s;
-    }
-    .slider-track-b.left-scroll {
-        animation-duration: 14s;
-    }
-    .slider-track-a.right-scroll {
-        animation-duration: 13s;
-    }
-    .slider-track-b.right-scroll {
-        animation-duration: 11s;
+        animation: scroll-right 20s linear infinite;
     }
 }
