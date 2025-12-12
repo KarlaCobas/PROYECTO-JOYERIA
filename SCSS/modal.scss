@@ -35,12 +35,35 @@
 
         .close-btn {
             position: absolute;
-            top: 15px; right: 20px;
-            font-size: 2rem;
+            top: 20px; right: 20px;
+            font-size: 1.8rem;
             cursor: pointer;
             z-index: 10;
-            color: $color-text-light;
-            &:hover { color: $color-text-main; }
+            color: $color-text-main;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            line-height: 1;
+            font-weight: 300;
+            
+            // ELIMINAR el pseudo-elemento ::before que crea otra X
+            // &::before {
+            //     content: '×';
+            //     font-size: 2.2rem;
+            //     line-height: 1;
+            //     font-weight: 300;
+            // }
+            
+            &:hover {
+                background: rgba(0, 0, 0, 0.15);
+                transform: scale(1.1);
+                color: darken($color-text-main, 10%);
+            }
         }
 
         .modal-body {
@@ -97,6 +120,14 @@
         .modal-content {
             padding: 1.5rem;
             width: 95%;
+            
+            .close-btn {
+                top: 15px;
+                right: 15px;
+                width: 35px;
+                height: 35px;
+                font-size: 1.5rem;
+            }
             
             .modal-body {
                 flex-direction: column; 

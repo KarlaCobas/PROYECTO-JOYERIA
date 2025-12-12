@@ -78,3 +78,14 @@ a {
     animation: none !important;
     transition: none !important;
 }
+// Asegurar que las imágenes sean visibles
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+// Estilo específico para imágenes lazy
+img[loading="lazy"] {
+    opacity: 1 !important; // Asegurar que sean visibles
+}
