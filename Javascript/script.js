@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     console.log('DOM cargado - Inicializando funcionalidades');
-    
-    // =========== HAMBURGER MENU ===========
+
     const burger = document.querySelector('.burger');
     const menu = document.querySelector('.menu');
     const menuLinks = document.querySelectorAll('.menu a');
@@ -74,7 +73,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // =========== INFINITE CAROUSELS ===========
     const sliderContainers = document.querySelectorAll('.slider-container');
     
     sliderContainers.forEach(container => {
@@ -103,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // =========== MODAL FUNCTIONALITY ===========
+
     const modal = document.getElementById('productModal');
     const closeBtn = document.querySelector('.modal .close-btn');
     
@@ -165,7 +163,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // =========== REVEAL ANIMATIONS ===========
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -178,7 +175,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-    // =========== SMOOTH SCROLL ===========
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             const href = this.getAttribute('href');

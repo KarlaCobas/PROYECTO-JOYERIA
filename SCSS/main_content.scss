@@ -1,7 +1,6 @@
-// main_content.scss - ESTILO ORIGINAL MEJORADO
 .main {
-    height: calc(100vh - 80px); // Resta la altura de la navbar
-    margin-top: 80px; // Empuja hacia abajo para no tapar con navbar
+    height: calc(100vh - 80px);
+    margin-top: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,7 +82,6 @@
         }
     }
 
-    // Efecto de partículas decorativas
     &::before {
         content: '';
         position: absolute;
@@ -119,7 +117,7 @@
         }
     }
 
-    // Tablet
+
     @media (max-width: 1024px) {
         height: calc(100vh - 70px);
         margin-top: 70px;
@@ -144,7 +142,6 @@
         }
     }
 
-    // Móvil - Diseño vertical
     @media (max-width: 768px) {
         height: auto;
         min-height: calc(100vh - 60px);
@@ -210,7 +207,7 @@
         }
     }
     
-    // Móviles pequeños
+
     @media (max-width: 480px) {
         padding: 1.5rem 0.8rem;
         gap: 1.5rem;
@@ -234,7 +231,7 @@
     }
 }
 
-// Variables por si no están definidas
+
 $font-heading: 'Playfair Display', serif !default;
 $font-body: 'Lato', sans-serif !default;
 $color-text-main: #1a1a1a !default;

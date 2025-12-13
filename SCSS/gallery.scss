@@ -1,26 +1,26 @@
 .catalog-section {
-    padding: 3rem 0; // Aumentado de 2rem
+    padding: 3rem 0;
 
     .section-header {
         text-align: center;
-        padding: 0 1.5rem; // Aumentado de 1rem
-        margin-bottom: 2rem; // Aumentado de 1.5rem
+        padding: 0 1.5rem;
+        margin-bottom: 2rem;
         
         h2 {
-            font-size: 2rem; // Aumentado de 1.8rem
+            font-size: 2rem;
             margin-bottom: 0.5rem;
         }
         p {
             color: $color-text-light;
             font-style: italic;
-            font-size: 1rem; // Aumentado de 0.9rem
+            font-size: 1rem;
         }
     }
 }
 
 .slider-container {
     width: 100%;
-    padding: 1.5rem 0; // Aumentado de 1rem
+    padding: 1.5rem 0; 
     position: relative;
 }
 
